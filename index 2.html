@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея — Задание 7</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="gallery" aria-labelledby="gallery-title">
+      <h1 id="gallery-title">Галерея изображений</h1>
+      <p class="description">Используйте стрелки, чтобы листать галерею.</p>
+
+      <div class="slider">
+        <button
+          class="slider-button slider-button-prev"
+          id="prev-button"
+          type="button"
+          aria-label="Предыдущая страница"
+        >
+          <span aria-hidden="true">&#8592;</span>
+        </button>
+
+        <div class="slider-viewport" id="slider-viewport">
+          <div class="slider-track" id="slider-track">
+            <figure class="slide">
+              <img src="1.jpg" alt="Пейзаж с архитектурой, мостом и горами">
+            </figure>
+            <figure class="slide">
+              <img src="2.jpg" alt="Пейзаж с большим деревом и ручьём">
+            </figure>
+            <figure class="slide">
+              <img src="3.jpg" alt="Пейзаж с сосной у виллы">
+            </figure>
+            <figure class="slide">
+              <img src="4.jpg" alt="Лесной пейзаж с солнечным светом">
+            </figure>
+            <figure class="slide">
+              <img src="5.jpg" alt="Пейзаж с большим деревом под облачным небом">
+            </figure>
+            <figure class="slide">
+              <img src="6.jpg" alt="Весенний пейзаж с деревьями у воды">
+            </figure>
+            <figure class="slide">
+              <img src="7.jpg" alt="Горный пейзаж с озером">
+            </figure>
+            <figure class="slide">
+              <img src="8.jpg" alt="Лесной пейзаж с дорогой и экипажем">
+            </figure>
+          </div>
+        </div>
+
+        <button
+          class="slider-button slider-button-next"
+          id="next-button"
+          type="button"
+          aria-label="Следующая страница"
+        >
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+      </div>
+
+      <div class="pager" aria-live="polite">
+        <span id="pager-text">Страница 1 из 8</span>
+        <div
+          class="pager-dots"
+          id="pager-dots"
+          aria-label="Страницы галереи"
+        ></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
